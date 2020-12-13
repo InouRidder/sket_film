@@ -251,7 +251,7 @@
 		opacity:1;
 	}
 
-	.hero-video-wrapper video.bgvid {
+	.hero-video-wrapper iframe.bgvid {
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -1355,3 +1355,39 @@
 	}
 
 }
+
+.fullscreen {
+	height: 100%;
+	  overflow: hidden;
+	  width: 100%;
+  }
+  .video {
+	display: block;
+	  left: 0px;
+	  overflow: hidden;
+	  padding-bottom: 56.25%; /* 56.25% = 16:9. set ratio */
+	  position: absolute;
+	  top: 50%;
+	  width: 100%;
+	  -webkit-transform-origin: 50% 0;
+	  transform-origin: 50% 0;
+	  -webkit-transform: translateY(-50%);
+	  transform: translateY(-50%);
+  }
+  .video .wrapper {
+	display: block;
+	  height: 300%;
+	  left: 0px;
+	  overflow: hidden;
+	  position: absolute;
+	  top: 50%;
+	  width: 100%;
+	  -webkit-transform: translateY(-50%);
+	  transform: translateY(-50%);
+  }
+  .video iframe {
+	display: block;
+	  height: 100%;
+	  width: 100%;
+  }
+  
